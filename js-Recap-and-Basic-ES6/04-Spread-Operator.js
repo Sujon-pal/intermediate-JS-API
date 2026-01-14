@@ -11,7 +11,7 @@ const a = [10, 20, 30];
 const b = a;
 
 b.push(40);
-console.log(...a); // [10, 20, 30, 40] original changed
+console.log(...a); // [10, 20, 30, 40] original array changed 
 
 // ✅ Spread copy
 const c = [100, 200, 300];
