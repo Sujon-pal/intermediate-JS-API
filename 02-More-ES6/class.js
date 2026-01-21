@@ -1,6 +1,6 @@
 class products {
   constructor(name, price, brand) {
-    this.name = name;
+    this.name = name; //// current object's name
     this.price = price;
     this.brand = brand;
   }
