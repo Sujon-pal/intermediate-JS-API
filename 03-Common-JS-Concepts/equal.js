@@ -1,0 +1,6 @@
+/*
+==   // loose equality
+===  // strict equality
+
+*/
+
