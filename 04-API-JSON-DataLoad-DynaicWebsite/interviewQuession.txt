@@ -106,7 +106,6 @@ Array – [ "HTML", "CSS", "JS" ]
 
 9️⃣ What is the role of JSON.stringify()?
 
-English:
 JSON.stringify() converts a JavaScript object into a JSON string so it can be sent to a server.
 
 Example:
@@ -114,12 +113,9 @@ Example:
 const user = { name: "Sujon", age: 22 };
 JSON.stringify(user);
 
-
-বাংলা:
 JSON.stringify() JavaScript object কে JSON string এ convert করে, যাতে server এ পাঠানো যায়।
 
 🔟 Show how to parse a JSON.
-
 
 To convert a JSON string into a JavaScript object, we use JSON.parse().
 
