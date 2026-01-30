@@ -1,0 +1,141 @@
+1️⃣ What is an API?
+
+An API (Application Programming Interface) is a set of rules that allows two software systems to communicate with each other.
+
+In simple terms:
+Frontend → API → Backend → Database
+An API is the path used to send and receive data.
+
+Example:
+A weather app uses an API to get weather data from a server.
+
+2️⃣ What are the HTTP methods supported by REST?
+
+English:
+REST APIs commonly use the following HTTP methods:
+
+GET → Read data
+
+POST → Create new data
+
+PUT → Update full data
+
+PATCH → Update partial data
+
+DELETE → Remove data
+
+3️⃣ Can you use a GET request instead of PUT to create a resource?
+
+❌ No, you should not use GET to create a resource.
+
+Reason:
+
+GET is only for fetching data
+
+POST or PUT is used for creating or updating data
+
+Using GET to create data breaks REST principles
+
+👉 POST is used to create resources.
+
+
+4️⃣ What is the difference between PUT and POST?
+
+PUT	POST
+Updates existing data	Creates new data
+Resource ID is known	ID is auto-generated
+Same request gives same result	Each request creates new data
+
+Example:
+
+PUT /users/5 → Update user with ID 5
+
+POST /users → Create a new user
+
+5️⃣ What is JSON?
+
+
+JSON (JavaScript Object Notation) is a lightweight data format used to exchange data between client and server.
+
+Example:
+
+{
+  "name": "Sujon",
+  "age": 22,
+  "role": "Developer"
+}
+
+
+✔ Lightweight
+✔ Easy to read
+✔ Most used in APIs
+
+
+
+6️⃣ What are CRUD operations?
+
+
+CRUD represents the four basic database operations:
+
+CRUD	HTTP Method
+Create	POST
+Read	GET
+Update	PUT / PATCH
+Delete	DELETE
+
+7️⃣ What is the file extension of JSON?
+
+The file extension of JSON is .json.
+
+8️⃣ What are the data types supported by JSON?
+
+JSON supports the following data types:
+
+String – "name": "Sujon"
+
+Number – "age": 22
+
+Boolean – "isStudent": true
+
+Null – "phone": null
+
+Object – { "city": "Dhaka" }
+
+Array – [ "HTML", "CSS", "JS" ]
+
+
+9️⃣ What is the role of JSON.stringify()?
+
+English:
+JSON.stringify() converts a JavaScript object into a JSON string so it can be sent to a server.
+
+Example:
+
+const user = { name: "Sujon", age: 22 };
+JSON.stringify(user);
+
+
+বাংলা:
+JSON.stringify() JavaScript object কে JSON string এ convert করে, যাতে server এ পাঠানো যায়।
+
+🔟 Show how to parse a JSON.
+
+
+To convert a JSON string into a JavaScript object, we use JSON.parse().
+
+Example:
+
+const jsonData = '{"name":"Sujon","age":22}';
+const obj = JSON.parse(jsonData);
+
+JSON string কে JavaScript object বানাতে JSON.parse() ব্যবহার করা হয়।
+
+1️⃣1️⃣ Tell us the difference between GET and POST
+
+English:
+
+GET              -     	POST
+Used to fetch data -	Used to send data
+Data sent in URL -	Data sent in body
+Less secure -	More secure
+Can be cached	- Cannot be cached
