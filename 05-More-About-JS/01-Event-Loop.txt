@@ -1,0 +1,72 @@
+🔹 What is the Event Loop?
+The Event Loop is the mechanism that allows JavaScript to handle asynchronous operations (like setTimeout, fetch, promises) even though JavaScript is single-threaded.
+
+🔁 Event Loop হলো JavaScript-এর traffic police
+যে ঠিক করে:
+
+কোন কাজ কখন চলবে
+
+JavaScript একসাথে একটাই কাজ করে,
+কিন্তু Event Loop থাকার কারণে async কাজ handle করতে পারে।
+
+🔹 Main Parts of the Event Loop System
+1️⃣ Call Stack
+2️⃣ Web APIs
+3️⃣ Callback Queue (Macrotask Queue)
+4️⃣ Microtask Queue
+5️⃣ Event Loop (Controller)
+
+🔹 Call Stack 
+
+একটার পর একটা function execute হয়
+
+যেটা শেষে ঢোকে সেটাই আগে বের হয়
+
+👉 Stack খালি না হলে অন্য কিছু চলবে না
+
+🔹 Web API 
+
+Browser বলে:
+
+“তুমি main কাজ করো, আমি async কাজ দেখি”
+
+setTimeout
+
+fetch
+
+click event
+
+এগুলো browser-এ থাকে, JS-এ না
+
+🔹 Microtask Queue
+
+Promise এর কাজ এখানে যায়
+এটার priority সবচেয়ে বেশি 🔥
+
+Promise.then()
+
+
+➡ Call Stack খালি হলেই আগে execute হবে
+
+🔹 Callback Queue
+
+setTimeout
+
+setInterval
+
+DOM events
+
+Microtask শেষ হলে তারপর run করে
+
+🔄 Event Loop কাজ করে যেভাবে 
+
+1️⃣ Call Stack খালি কিনা দেখে
+2️⃣ খালি হলে:
+
+আগে Microtask Queue
+
+পরে Callback Queue
+
+এই cycle চলতেই থাকে = Event Loop
+
+

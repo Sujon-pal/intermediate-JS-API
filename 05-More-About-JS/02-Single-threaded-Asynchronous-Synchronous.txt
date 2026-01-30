@@ -1,0 +1,42 @@
+1  What does Single-threaded mean?
+
+
+Single-threaded means JavaScript can execute only one task at a time on the Call Stack.
+
+Single-threaded মানে JavaScript একসাথে একটাই কাজ করতে পারে।
+
+🖍️ JavaScript itself is single-threaded, but the browser provides Web APIs that help handle async tasks.
+
+
+2 What is Synchronous code?
+Synchronous code runs line by line, blocking the next task until the current one finishes.
+
+🖍️ Problem with Synchronous code?
+Long synchronous tasks can block the Call Stack and freeze the UI.
+
+4 What is Asynchronous code?
+Asynchronous code allows long tasks to run in the background without blocking the main thread.
+
+📌 Example:
+setTimeout(() => {
+  console.log("Async");
+}, 1000);
+
+console.log("Sync");
+📌 Output:
+            Sync
+            Async
+
+
+5 Common Asynchronous operations in JavaScript
+
+setTimeout
+
+setInterval
+
+fetch / API call
+
+Promise
+
+Event listeners
+
