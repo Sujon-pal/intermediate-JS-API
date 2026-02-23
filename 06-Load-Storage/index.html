@@ -11,7 +11,18 @@
     <!-- <script src="01-loclaStorage.js"></script> -->
 
     <!-- 36_5-2 How to set and get objects to local storage -->
-     <button onclick="handleLocalStorage()">Add local Storage</button>
+    <button onclick="handleLocalStorage()">Add local Storage</button>
+    <br /><br />
     <script src="02-localStorage.js"></script>
+
+    <!-- 36_5-3 A simple shopping cart to add product and quantity -->
+    <input id="productName" type="text" placeholder="Product Name" /> <br /><br />
+    <input id="productQuantity" type="text" placeholder="Product Quantity " />
+    <br /><br />
+    <button id="addCard" onclick="handleAddCard()">Add to Card</button>
+    <ul id="product-Container">
+
+    </ul>
+    <script src="03-card.js"></script>
   </body>
 </html>

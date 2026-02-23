@@ -15,8 +15,3 @@ const data = localStorage.getItem("info");
 const convertObject = JSON.parse(data);
 console.log(convertObject);
 
-
-
-
-
-
